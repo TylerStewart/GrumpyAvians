@@ -529,7 +529,7 @@ void createBird(float x, float y, float rad)
 	GameSprite *pBirdSprite = new GameSprite( SpriteBatchName::SpriteBatch_Moving,SpriteName::Sprite_Bird, ImageName::Image_RedBird, Rect(x, y, rad, rad) );
 	CircleSprite *pBirdCircle = new CircleSprite( SpriteBatchName::SpriteBatch_Debug, SpriteName::Sprite_Box_Bird, 2.0f, Color(Yellow), Rect(x, y+rad*2, rad, rad));
 	pBird = new GameObjectBird(GameObjectName::GameObject_Bird, pBirdSprite, pBirdCircle, pWorld, 70.0f  );
-
+	pBird->bState = GROUND;
 	birds.push(pBird);
 	//printf("%f\n", pBird->pBody->GetMass());
 }
@@ -539,7 +539,7 @@ void createYellowBird(float x, float y, float rad)
 	GameSprite *pBirdSprite = new GameSprite( SpriteBatchName::SpriteBatch_Moving,SpriteName::Sprite_Bird, ImageName::Image_YellowBird, Rect(x, y, rad, rad) );
 	CircleSprite *pBirdCircle = new CircleSprite( SpriteBatchName::SpriteBatch_Debug, SpriteName::Sprite_Box_Bird, 2.0f, Color(Yellow), Rect(x, y+rad*2, rad, rad));
 	pBird = new YellowBird(GameObjectName::GameObject_Bird, pBirdSprite, pBirdCircle, pWorld, 70.0f );
-	
+	pBird->bState = GROUND;
 	birds.push(pBird);
 }
 
@@ -553,7 +553,7 @@ void createGreenBird(float x, float y, float rad)
 	b2Vec2 tmp(0,0);
 	b->boom = tmp;
 	b->boomtimer = 80;
-	
+	pBird->bState = GROUND;
 	birds.push(pBird);
 }
 
@@ -749,7 +749,7 @@ void AzulCore::Update()
 	// Time update.
 	//      Get the time that has passed.
 	//      Feels backwards, but its not, need to see how much time has passed
-		printf("FRAME--------------------------------------------------------------\n" );
+		//printf("FRAME--------------------------------------------------------------\n" );
 		stopWatch.toc();
 		stopWatch.tic();
 		totalWatch.toc();

@@ -162,6 +162,5 @@ void GameObjectBird::update( b2Vec2 posInMeters, float angleInRadians )
 
 GameObjectBird::~GameObjectBird()
 {
-	printf("doop");
 }
 

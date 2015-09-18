@@ -110,10 +110,10 @@ public:
 			if (impTotal>5)	
 			pPig->takeDamage(impTotal);
 		
-			ImageName::Name newName;
-			newName = pPig->getNextImageName( currName );
+			//ImageName::Name newName;
+			//newName = pPig->getNextImageName( currName );
 
-			gObjA->pGameSprite->spriteModel->SwapImage(newName);
+			//gObjA->pGameSprite->spriteModel->SwapImage(newName);
 		}
 
 		if( gObjB->gameObjName == GameObjectName::GameObject_Pig )
@@ -124,10 +124,10 @@ public:
 			if (impTotal>5)	
 			pPig->takeDamage(impTotal);
 		
-			ImageName::Name newName;
-			newName = pPig->getNextImageName( currName );
+			//ImageName::Name newName;
+			//newName = pPig->getNextImageName( currName );
 
-			gObjB->pGameSprite->spriteModel->SwapImage(newName);
+			//gObjB->pGameSprite->spriteModel->SwapImage(newName);
 		}
 
 	}
