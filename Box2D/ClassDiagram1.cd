@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="b2World">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="b2World::__unnamed_enum_00c0_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynamics\b2World.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QSDBDACMQEAVMEJSQQbAmFgqACgqQUAApBQCACghAKM=</HashCode>
+      <FileName>Dynamics\b2World.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_bodyList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="b2Body">
+    <Position X="3.25" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="b2Body::__unnamed_enum_00b7_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynamics\b2Body.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="m_contactList" Type="b2ContactEdge">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.039" Y="0.236" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>YSACMQ4YAuSADgDBFxJVgcAWcgIBAVsQEg0BAJRwMIM=</HashCode>
+      <FileName>Dynamics\b2Body.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_world" />
+      <Field Name="m_jointList" />
+      <Field Name="m_fixtureList" />
+      <Field Name="m_contactList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="b2Fixture">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQABQAAgEAEwAAUgQQwQAQAGBEEEMwJCABAAAhhAI=</HashCode>
+      <FileName>Dynamics\b2Fixture.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_shape" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="b2Contact">
+    <Position X="6" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="b2Contact::__unnamed_enum_00ca_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynamics\Contacts\b2Contact.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAmUIAEVAUjAIUAUABkRAAEJAIVoAEAgBGAAACIA=</HashCode>
+      <FileName>Dynamics\Contacts\b2Contact.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="b2Shape">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="b2Shape::Type">
+        <TypeIdentifier>
+          <NewMemberFileName>Collision\Shapes\b2Shape.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAgAAAIAAAACAAAAAAAAAAEAAEAAAQACAAAABI=</HashCode>
+      <FileName>Collision\Shapes\b2Shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="b2PolygonShape">
+    <Position X="8" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEgBACABAAACAAAAAAAAAAEAABAABAACESAgBI=</HashCode>
+      <FileName>Collision\Shapes\b2PolygonShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="b2CircleShape">
+    <Position X="10" Y="9.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEgAAAAAAAACAAQAAACQAAEAgAAABAACAAAABI=</HashCode>
+      <FileName>Collision\Shapes\b2CircleShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="b2ContactListener">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAABAAAAgAAAgAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Dynamics\b2WorldCallbacks.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="b2JointEdge">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAYAAAA=</HashCode>
+      <FileName>Dynamics\Joints\b2Joint.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="b2ContactEdge">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <Members>
+      <Field Name="other" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAYAAAA=</HashCode>
+      <FileName>Dynamics\Contacts\b2Contact.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="contact" />
+      <Field Name="other" />
+    </ShowAsAssociation>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
